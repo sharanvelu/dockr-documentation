@@ -1,7 +1,7 @@
-- [Introduction](/introduction)
-- [Why Dockr](/dockr)
-- [Requirements](/requirements)
-- [Installation](/installation)
+- [Introduction](/introduction.md)
+- [Why Dockr](/dockr.md)
+- [Requirements](/requirements.md)
+- [Installation](/installation.md)
 
 
 
