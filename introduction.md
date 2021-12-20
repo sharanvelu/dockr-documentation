@@ -1,8 +1,15 @@
 # Introduction
 
+DockR is a package that interacts with `Docker` and `Laravel` to maintain the containers used for Local development of `Laravel App`.
+
+DockR is able to create and maintain multiple number of projects at the same time with ease.
+
+DockR is written using `Shell Script`.
+
+## Reason for DockR
 Developing a Laravel Site always remains simple with `Laravel Homestead` for Years.
 
-But Apple had another plans. 
+But Apple had another plans.
 When Apple Launched their MacBooks with `M1 chip (ARM based SOC)` an entirely different architecture in processor, Homestead is not supported for the Arm based M1 SOC.
 This is due to different architecture in Arm based M1 SOC where the Virtual Machine providers failed to update their software to support M1 SOC. This Results in the support drop of Homestead.
 
@@ -22,11 +29,17 @@ But it makes a bit of difficulty for developer run and use the container.
 
 So we searched for various packages that integrates well into `Laravel` app and `Docker containers`.
 
-## Sail
+## Other Apps?
 
-There is `Laravel Sail` which uses `Docker` for local Laravel development. But the issue here is, sail supports only `PHP 8.0` and `PHP 8.1`.
+**Qn :** Isn't there any other apps/package that could fix your problem?
+<br>
+**Ans :** Yes, There are many apps and packages that can be used as development environment. But none of them satisfied our needs.
 
-But most of our Laravel applications are years old and are far beyond migrating them to the latest version.
+**Laravel Sail**
+1. Sail uses `Docker` for local Laravel development. 
+2. Sail supports only `PHP 8.0` and `PHP 8.1`. Most of our Laravel applications are years old and are far beyond migrating them to the latest version.
+3. Sail cannot connect multiple projects to single DB.
+
 For this unfortunate reason, we didn't consider sail as an option.
 
-We searched far beyond the limit, And we could find nothing. So we created one by ourselves, and we call it `Dockr`.
+We searched far beyond the limit, And we could find nothing. So we created one by ourselves, and we call it `DockR`.

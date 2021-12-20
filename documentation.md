@@ -1,10 +1,7 @@
 - [Introduction](./introduction.md)
 - [Why Dockr](./dockr.md)
-- [Requirements](./requirements.md)
 - [Installation](./installation.md)
-
-
-
-[comment]: <> (- Getting Started)
-
-[comment]: <> (    - [Release Notes]&#40;/docs/{{version}}/releases&#41;)
+- [Getting Started](./get_started.md)
+- [Usage](./usage.md)
+- [Asset Connection](./asset_connection.md)
+- [Contact Us](./contact_us.md)
