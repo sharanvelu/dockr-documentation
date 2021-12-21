@@ -1,4 +1,4 @@
-# Introduction
+## Introduction
 
 DockR is a package that interacts with `Docker` and `Laravel` to maintain the containers used for Local development of `Laravel App`.
 

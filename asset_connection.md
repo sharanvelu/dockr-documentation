@@ -2,7 +2,7 @@
 
 ### Mysql
 
-### Within the Docker containers
+#### Within the Docker containers
 In order to connect from within another container(.env), We will have to use the asset containers name instead of IP.
 <br>
 `Docker` will take care of `IP resolving` and connects to the asset containers.
@@ -30,7 +30,7 @@ For `DB_DATABASE`, use any name you want.
 During `dockr up`, Dockr will check for the specified DB. If none was found, DockR will create one for you with the DB name specified in `DB_DATABASE`.
 
 
-### Outside the docker containers
+#### Outside the docker containers
 To connect to Mysql from apps such as `TablePlus`, `Datagrip`, `PhpStorm`, `MySql Workbench`, or even `terminal`, use :
 ```
 Host = 127.0.0.1 / localhost
@@ -46,7 +46,7 @@ Database = As mentioned in DB_DATABASE .env variable.
 
 Connecting to Postgres is same as that of mysql.
 
-### Within the Docker containers
+#### Within the Docker containers
 In order to connect from within another container(.env), We will have to use the asset containers name instead of IP.
 <br>
 `Docker` will take care of `IP resolving` and connects to the asset containers.
@@ -74,7 +74,7 @@ For `DB_DATABASE`, use any name you want.
 During `dockr up`, Dockr will check for the specified DB. If none was found, DockR will create one for you with the DB name specified in `DB_DATABASE`.
 
 
-### Outside the docker containers
+#### Outside the docker containers
 To connect to Postgres from apps such as `TablePlus`, `Datagrip`, `PhpStorm`, or even `terminal`, use :
 ```
 Host = 127.0.0.1 / localhost
