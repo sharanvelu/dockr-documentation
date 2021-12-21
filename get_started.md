@@ -49,6 +49,6 @@ This will create a Database automatically (if not exist) when you start your pro
 | DOCKR_WORKER | Used to start a separate container and runs a scheduler and 2 queue worker | DOCKR_WORKER=1 | 
 
 > Note : 
-> - .env variable `DOCKR_SKIP_DB_CHECK`, `DOCKR_SKIP_ASSET` and `DOCKR_WORKER` is not boolean. Whenever the variable is declared, The related action will be handled.
+> - .env variables `DOCKR_SKIP_DB_CHECK`, `DOCKR_SKIP_ASSET` and `DOCKR_WORKER` are not boolean. Whenever the variable is declared, The related action will be handled.
 > Both `DOCKR_SKIP_DB_CHECK=1` and `DOCKR_SKIP_DB_CHECK=0` will work the same way.
 > - Every .env variable used here will be prefixed by `DOCKR`.
