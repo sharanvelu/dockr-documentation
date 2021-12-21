@@ -26,7 +26,7 @@ Here are the list of currently supported PHP versions.
 - ***8.0*** : `8.0`, `8.0.2`, `8.0.6`
 - ***8.1*** : `8.1`
 
-> More versions will be supported in the future versions.
+> More versions will be supported in the upcoming days.
 
 #### DB_DATABASE (.env)
 Also, update the `DB_DATABASE=<your_project_DB>`.
