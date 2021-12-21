@@ -11,10 +11,10 @@ Developing a Laravel Site always remains simple with `Laravel Homestead` for Yea
 
 But Apple had another plans.
 When Apple Launched their MacBooks with `M1 chip (ARM based SOC)` an entirely different architecture in processor, Homestead is not supported for the Arm based M1 SOC.
-This is due to different architecture in Arm based M1 SOC where the Virtual Machine providers failed to update their software to support M1 SOC. This Results in the support drop of Homestead.
+This is due to different architecture`(ARM)` in M1 SOC where the Virtual Machine providers failed to update their software to support M1 chip. This Results in the support drop of Homestead.
 
 To overcome this problem, We’ve searched for various alternatives to replace it in place of homestead which should work in both `Intel(x86 architecture)` and `M1(ARM architecture)`.
-We planed to use `Docker` as the Virtual provider.
+Finally, We planned to use `Docker` as the Virtual machine provider.
 
 ## Why Docker
 
