@@ -3,5 +3,7 @@
 - [Installation](./installation.md)
 - [Getting Started](./get_started.md)
 - [Usage](./usage.md)
+- Commands
+    - [Available Commands](./available_commands.md)
 - [Asset Connection](./asset_connection.md)
 - [Contact Us](./contact_us.md)
