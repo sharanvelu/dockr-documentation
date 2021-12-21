@@ -16,6 +16,7 @@ APP_PHP_VERSION=7.4
 - `APP_PHP_VERSION` is used to mention the PHP version to be used in the container, the project is being hosted to.
 
 #### Supported PHP Versions
+Here are the list of currently supported PHP versions.
 - ***5.6*** : `5.6`
 - ***7.0*** : `7.0`
 - ***7.0*** : `7.1`, `7.1.3`
@@ -24,6 +25,8 @@ APP_PHP_VERSION=7.4
 - ***7.4*** : `7.4`, `7.4.2`, `7.4.6`
 - ***8.0*** : `8.0`, `8.0.2`, `8.0.6`
 - ***8.1*** : `8.1`
+
+> More versions will be supported in the upcoming days.
 
 #### DB_DATABASE (.env)
 Also, update the `DB_DATABASE=<your_project_DB>`.
