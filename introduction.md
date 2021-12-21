@@ -4,7 +4,7 @@ DockR is a package that interacts with `Docker` and `Laravel` to maintain the co
 
 DockR is able to create and maintain multiple number of projects at the same time with ease.
 
-DockR is written using `Shell Script`.
+DockR is written using `Bash Script`.
 
 ## Reason for DockR
 Developing a Laravel Site always remains simple with `Laravel Homestead` for Years.
