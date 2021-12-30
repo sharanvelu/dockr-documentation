@@ -1,6 +1,6 @@
 ## Available Commands
 
-- `dockr up` - Starts the project containers along with asset containers(if asset containers not started). Then creates a database mentioned in `DB_DATABASE` .env variable if the database mentioned is not available.
+- `dockr up` - Starts the project containers along with asset containers(if asset containers not started). Then creates a database mentioned in `DB_DATABASE` .env variable if it doesn't exist.
 - `dockr down` - Stop and removes the containers
     - `dockr down` - Stop and removes only the current project container.
     - `dockr down asset` - Stop and removes the current project containers along with the asset containers.
