@@ -8,7 +8,7 @@ To get started with DockR as your laravel local development, simply add some `en
 
 ```
 APP_PORT=81
-APP_PHP_VERSION=7.4
+APP_PHP_VERSION=7.5
 ```
 
 #### Explanation 
