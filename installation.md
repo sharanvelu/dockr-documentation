@@ -8,18 +8,22 @@ Make sure Docker is `up to date`.
 
 ## Installation
 
-Installing DockR is the same for all `Operating System's`. However, installing and configuring `Docker` and `DockR` is quite different for `OS's`.
+Procedure for Installing DockR is the same for all `Operating System's`. However, installing and configuring `Docker` and `DockR` is quite different for `OS's`.
 
-#### Installing DockR on *MAC*
+### *MAC*
 
-Installing `DockR` on your `MAC` is very simple as running the following command in your terminal.
+You could install `Dockr` on your MAC through different ways.
+
+Through `HomeBrew` :
+
+```shell
+brew install sharanvelu/dockr/dockr 
+```
+
+Or Through `Manual` Method :
 
 ```shell
 sudo bash -c "$(curl -fsSL install.dockr.in)"
 ```
 
-And that's it, DockR will take care of everything else.
-
-This command will create a `Dockr` directory in your home directory and copies the necessary files to the location.
-
-This command also adds a symlink for executable file `dockr` in `/usr/local/bin` directory. This enables you to run `dockr` commands anywhere from your terminal.
+And that's it, `DockR` should now be installed in your machine.
