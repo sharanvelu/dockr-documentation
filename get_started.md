@@ -1,19 +1,21 @@
 ## Getting Started
 To get started with DockR as your laravel local development, simply add some `env` variables in top of the `.env` of your project.
 
-- APP_PORT=81<some_random_number>(Except 80)
-- APP_PHP_VERSION=8.0<Your php version>
+- DOCKR_SITE=test.site (The domain that is used to connect to the containers network)
+- DOCKR_PHP_VERSION=8.0 (Your Project's PHP version)
 
 #### Example
 
 ```
-APP_PORT=81
-APP_PHP_VERSION=7.5
+DOCKR_PHP_VERSION=7.5
+DOCKR_SITE=dockr.test
 ```
 
-#### Explanation 
-- `APP_PORT` must be unique across all projects. This is used to connect to the server from the web browser.
-- `APP_PHP_VERSION` is used to mention the PHP version to be used in the container, the project is being hosted to.
+#### Explanation
+- `DOCKR_SITE` \[REQUIRED] is used to specify the site that is to be proxied to the project container.
+- `DOCKR_PHP_VERSION` \[OPTIONAL] is used to denote the PHP version to be used for the project.<br>When no value is specified, it will be defaulted to `latest` version.
+
+> Note : Docker will automatically assign a port for the container. `DockR` will fetch the port and use it to use with the proxy.
 
 #### Supported PHP Versions
 Here are the list of currently supported PHP versions.
@@ -26,29 +28,16 @@ Here are the list of currently supported PHP versions.
 - ***8.0*** : `8.0`,`8.0.0`, `8.0.2`, `8.0.6`
 - ***8.1*** : `8.1.0`
 
-> More versions will be supported in the future versions.
+> More versions with more features will be supported in the upcoming days.
+
+---
 
 #### DB_DATABASE (.env)
 Also, update the `DB_DATABASE=<your_project_DB>`.
 <br>
 - `your_project_DB` is the Database you wish to use for your project.
 
-This will create a Database automatically (if not exist) when you start your project containers.
+This will create a Database automatically (if not exist) in `mysql` or `postgres` when you start your project.
 
-## Available ENV variables
-
-| Variable | Description | Example |
-| --- | --- | --- |
-| DOCKR_PORT | Defines PORT for the project. | DOCKR_HOST=81 |
-| DOCKR_PHP_VERSION | Defines the PHP version to be used. | DOCKR_PHP_VERSION=8.1 |
-| DOCKR_DOCKER_IMAGE | Defines a custom generated image to be used for the project instead of default image. | DOCKR_DOCKER_IMAGE="<image\>:<tag\>" |
-| DOCKR_CUSTOM_COMPOSE_FILE | Defines a custom `docker-compose.yml` file in the project root dir to be used. | DOCKR_CUSTOM_COMPOSE_FILE="file.yml" |
-| DOCKR_CONTAINER_NAME | Sets the custom Container Name. | DOCKR_CONTAINER_NAME=custom_name |
-| DOCKR_SKIP_DB_CHECK | Used to skip the Database presence check while starting the project containers. | DOCKR_SKIP_DB_CHECK=1 |
-| DOCKR_SKIP_ASSET | Used to skip starting the asset containers while starting project containers. | DOCKR_SKIP_ASSET=1 |
-| DOCKR_WORKER | Used to start a separate container and runs a scheduler and 2 queue worker | DOCKR_WORKER=1 | 
-
-> Note : 
-> - .env variables `DOCKR_SKIP_DB_CHECK`, `DOCKR_SKIP_ASSET` and `DOCKR_WORKER` are not boolean. Whenever the variable is declared, The related action will be handled.
-> Both `DOCKR_SKIP_DB_CHECK=1` and `DOCKR_SKIP_DB_CHECK=0` will work the same way.
-> - Every .env variable used here will be prefixed by `DOCKR`.
+The database specified in `DB_DATABASE` will be created in the database connection specified in `DB_CONNECTION`. 
+<br>If other than `mysql` or `postgres` is specified, Then the DB creation will not take place.
