@@ -22,7 +22,7 @@ The main and obvious reason to use `DockR` is,
 
 `DockR` is just a bash script that shortens the hilariously large Docker commands.
 <br>
-`DockR` improves the developer experience using `Docker` without compromise.
+`DockR` improves the developer experience using `Docker` without any compromise.
 
 ---
 

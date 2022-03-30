@@ -11,8 +11,8 @@ If connecting from outside the container such as any other apps like `MySQL Work
 For all the asset containers, The default username and password will be
 
 ```apache
-USERNAME = dockr
-PASSWORD = password
+USERNAME=dockr
+PASSWORD=password
 ```
 
 ### Mysql
@@ -22,17 +22,17 @@ PASSWORD = password
 For Mysql : `DB_PORT` will be `3306` and its `DB_HOST` will be `dockr_mysql`.
 
 ```ini
-DB_PORT = 3306
-DB_HOST = dockr_mysql
+DB_PORT=3306
+DB_HOST=dockr_mysql
 ```
 
 Database .env :
 
 ```ini
-DB_CONNECTION = mysql
-DB_USERNAME = dockr
-DB_PASSWORD = password
-DB_DATABASE = <test_db>
+DB_CONNECTION=mysql
+DB_USERNAME=dockr
+DB_PASSWORD=password
+DB_DATABASE=<test_db>
 ```
 
 For `DB_DATABASE`, use any name you want to use for your project.
@@ -45,11 +45,11 @@ For `DB_DATABASE`, use any name you want to use for your project.
 To connect to Mysql from apps such as `TablePlus`, `Datagrip`, `PhpStorm`, `MySql Workbench`, or even `terminal`, use :
 
 ```apache
-Host = 127.0.0.1 / localhost
-Port = 3306
-UserName = dockr
-Password = password
-Database = As mentioned in DB_DATABASE .env variable.
+Host=127.0.0.1 / localhost
+Port=3306
+UserName=dockr
+Password=password
+Database=As mentioned in DB_DATABASE .env variable.
 ```
 
 --- 
@@ -63,17 +63,17 @@ Connecting to Postgres is same as that of mysql.
 For Postgres : `DB_PORT` will be `5432` and its `DB_HOST` will be `dockr_postgres`.
 
 ```ini
-DB_PORT = 5432
-DB_HOST = dockr_postgres
+DB_PORT=5432
+DB_HOST=dockr_postgres
 ```
 
 Database .env :
 
 ```ini
-DB_CONNECTION = pgsql
-DB_USERNAME = dockr
-DB_PASSWORD = password
-DB_DATABASE = <test_db>
+DB_CONNECTION=pgsql
+DB_USERNAME=dockr
+DB_PASSWORD=password
+DB_DATABASE=<test_db>
 ```
 
 For `DB_DATABASE`, use any name you want to use for your project.
@@ -86,11 +86,11 @@ For `DB_DATABASE`, use any name you want to use for your project.
 To connect to Postgres from apps such as `TablePlus`, `Datagrip`, `PhpStorm`, or even `terminal`, use :
 
 ```apache
-Host = 127.0.0.1 / localhost
-Port = 5432
-UserName = dockr
-Password = password
-Database = As mentioned in DB_DATABASE .env variable.
+Host=127.0.0.1 / localhost
+Port=5432
+UserName=dockr
+Password=password
+Database=As mentioned in DB_DATABASE .env variable.
 ```
 
 ---
@@ -100,8 +100,8 @@ Database = As mentioned in DB_DATABASE .env variable.
 Use the following .env variables to connect in the containers.
 
 ```ini
-REDIS_HOST = dockr_redis
-REDIS_PASSWORD = null
-REDIS_PORT = 6379
+REDIS_HOST=dockr_redis
+REDIS_PASSWORD=null
+REDIS_PORT=6379
 ```
 

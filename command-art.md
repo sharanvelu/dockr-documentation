@@ -1,8 +1,6 @@
 ### dockr art
 
-Used to run `php artisan` commands within the project container.
-<br>
-`dockr art` is a shorthand command for `dockr artisan`.
+Used to run `php artisan` commands within the project container. `dockr art` is a shorthand command for `dockr artisan`.
 
 Usage :
 

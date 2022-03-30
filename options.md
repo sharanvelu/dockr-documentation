@@ -20,7 +20,7 @@ Available configuration commands are :
 ```dockr
 dockr config enable <asset>     # Enable the specified Asst container
 dockr config disable <asset>    # Disable the specified Asset container
-dockr config get <asset>      # Get the status of the specified Asset container.
+dockr config get <asset>        # Get the status of the specified Asset container.
 dockr config list               # List all the configurations values.
 ```
 
@@ -35,7 +35,7 @@ dockr config list
 
 > Note : Configurations are available for all asset containers except `Proxy`. That is you cannot disable the proxy container.<br>
 > You can add configurations to only `MySQL`, `Postgres` and `Redis`.
-> 
+>
 > When no value is set for an asset, It will default to 'enable' state.
 
 ### Available ENV variables
@@ -59,6 +59,8 @@ dockr config list
     > <br>Both `DOCKR_SKIP_DB_CHECK=1` and `DOCKR_SKIP_DB_CHECK=0` will work the same way.
     > <br>However this will be changed in the future, so we recommend you top use `DOCKR_SKIP_DB_CHECK=1` whenever possible.
 
+---
+
 ### Detailed Explanation
 
 ##### DOCKR_SITE
@@ -72,8 +74,8 @@ This value is required. If it wasn't specified, `DockR` will throw an error and 
 Example :
 
 ```ini
-DOCKR_SITE = dockr.test
-DOCKR_SITE = *.dockr.test
+DOCKR_SITE=dockr.test
+DOCKR_SITE=*.dockr.test
 ```
 
 > Note :
@@ -91,8 +93,8 @@ This variable is optional. If no value is specified for this variable, It will d
 Example :
 
 ```ini
-DOCKR_PHP_VERSION = 8.0
-DOCKR_PHP_VERSION = 7.4
+DOCKR_PHP_VERSION=8.0
+DOCKR_PHP_VERSION=7.4
 ```
 
 > Note : Kindly use only the supported `PHP versions`.
@@ -108,7 +110,7 @@ build an of your own choice and use them with DockR.
 Example :
 
 ```ini
-DOCKR_DOCKER_IMAGE = dockr-project:testing
+DOCKR_DOCKER_IMAGE=dockr-project:testing
 ```
 
 You can use both images from local and images from remote repository. This will be handled as per the Docker image
@@ -128,7 +130,7 @@ You can also use your own custom name for the container.
 Example :
 
 ```ini
-DOCKR_CONTAINER_NAME = dockr_container
+DOCKR_CONTAINER_NAME=dockr_container
 ```
 
 ---
@@ -144,8 +146,8 @@ This will prevent the DockR to check and create the Database.
 Example :
 
 ```ini
-DOCKR_SKIP_DB_CHECK = 0
-DOCKR_SKIP_DB_CHECK = 1
+DOCKR_SKIP_DB_CHECK=0
+DOCKR_SKIP_DB_CHECK=1
 ```
 
 > Note : The value `0` and `1` behaves the `same`. If the variable is set, then the DockR will not check and create the database.
@@ -169,8 +171,8 @@ So, when you are using `DOCKR_SKIP_ASSET`, `DOCKR_SKIP_DB_CHECK` will also be se
 Example :
 
 ```ini
-DOCKR_SKIP_ASSET = 0
-DOCKR_SKIP_ASSET = 1
+DOCKR_SKIP_ASSET=0
+DOCKR_SKIP_ASSET=1
 ```
 
 > Note :
@@ -200,8 +202,8 @@ php artisan queue:listen
 Example :
 
 ```ini
-DOCKR_WORKER = 0
-DOCKR_WORKER = 1
+DOCKR_WORKER=0
+DOCKR_WORKER=1
 ```
 
 > Note : `DOCKR_WORKER` variable is also same as the previous one, It behaves the same if you provide any value to it.
@@ -222,8 +224,8 @@ be used.
 Example :
 
 ```ini
-DOCKR_COMPOSER_VERSION = 1
-DOCKR_COMPOSER_VERSION = 2
+DOCKR_COMPOSER_VERSION=1
+DOCKR_COMPOSER_VERSION=2
 ```
 
 ---
@@ -241,8 +243,8 @@ need to provide all the asset containers that are need to be started with the pr
 Example :
 
 ```ini
-DOCKR_OVERRIDE_ASSET_CONFIG = postgres
-DOCKR_OVERRIDE_ASSET_CONFIG = mysql,postgres,redis
+DOCKR_OVERRIDE_ASSET_CONFIG=postgres
+DOCKR_OVERRIDE_ASSET_CONFIG=mysql,postgres,redis
 ```
 
 ---
@@ -251,7 +253,7 @@ DOCKR_OVERRIDE_ASSET_CONFIG = mysql,postgres,redis
 
 We have provided an option to combine additional `dockr-compose` file with the default one.<br>
 
->When using this option, be careful to play with the value as changing some default values will break the working of `DockR` properly.<br>
+> When using this option, be careful to play with the value as changing some default values will break the working of `DockR` properly.<br>
 > Configurations such as `container-name`, `network`, `build`, `command`,`entrypoint`, ... will break the `DockR` functionality.
 
 Example :
@@ -259,15 +261,15 @@ Example :
 ```yaml
 version: "3.7"
 services:
-    web:
-        volumes:
-            - ~/Downloads/dockr-test:/var/www/test
-        environment:
-            - TEST_VARIABLE_1=test_value_1
-            - TEST_VARIABLE_2=test_value_2
-        labels:
-            - TESTING=true
-            - PRODUCTION=false
+  web:
+    volumes:
+      - ~/Downloads/dockr-test:/var/www/test
+    environment:
+      - TEST_VARIABLE_1=test_value_1
+      - TEST_VARIABLE_2=test_value_2
+    labels:
+      - TESTING=true
+      - PRODUCTION=false
 ```
 
 
