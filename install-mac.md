@@ -4,17 +4,15 @@
 
 Before you begin, Make sure Docker is installed and up-to-date.
 
-### Install using HomeBrew
+[//]: # (### Install using HomeBrew)
 
-Run the HomeBrew install command on your terminal. You can run the command in any directory.
+[//]: # (Run the HomeBrew install command on your terminal. You can run the command in any directory.)
 
-```bash
-brew install sharanvelu/dockr/dockr
-```
+[//]: # (```bashbrew install sharanvelu/dockr/dockr```)
 
-The above command will install `DockR` at the HomeBrew installation directory and the executable binary will be added automatically by Homebrew.
+[//]: # (The above command will install `DockR` at the HomeBrew installation directory and the executable binary will be added automatically by Homebrew.)
 
----
+[//]: # (---)
 
 ### Install using Curl
 
@@ -23,7 +21,7 @@ If you don't have HomeBrew or don't want to install HomeBrew, you can simply ins
 To install DockR using `curl`, run the following command in your terminal in any directory.
 
 ```bash
-sudo bash -c "$(curl -fsSL install.dockr.in)"
+bash -c "$(curl -fsSL install.dockr.in)"
 ```
 
 The above command will install the DockR at your `$HOME` directory and add the executable binary in a directory which is already added to your `environment path` variable.
