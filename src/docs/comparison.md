@@ -1,5 +1,5 @@
 ---
-title: Concept
+title: Comparison
 description: Comparison of DockR with other alternatives
 ---
 
