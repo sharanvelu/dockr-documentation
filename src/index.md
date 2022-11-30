@@ -32,9 +32,6 @@ features:
     title: Customization
     details: Our Docker Image contains most of the packages and extensions built-in. If you are not satisfied with them, you can create your own image and use it with your project.
   - icon: 🎀
-    title: Worker
-    details: DockR provides an easy way to work with Schedules and Queues. DockR will create a separate container and runs a Scheduler and two Queue Listeners for working with Worker tasks.
-  - icon: 🎀
     title: Composer
     details: DockR provides an option to have use specific Composer version for different projects.
   - icon: 🎀
