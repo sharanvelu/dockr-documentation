@@ -3,7 +3,7 @@ export default {
     title: 'DockR',
     description: 'An awesome docs template built by me',
     lastUpdated: true,
-    cleanUrls: 'without-subfolders',
+    cleanUrls: 'with-subfolders',
     srcDir: '../src',
     outDir: './.build',
     head: [
