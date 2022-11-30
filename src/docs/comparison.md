@@ -6,7 +6,7 @@ description: Comparison of DockR with other alternatives
 # Comparisons
 
 Yeah, We(DockR) isn't the first tool to solve the development workload. There are tons and tons of options out there.
-<br>Let's find the difference.
+<br>Let's find the difference for few popular ones.
 
 ## Laravel Sail
 
