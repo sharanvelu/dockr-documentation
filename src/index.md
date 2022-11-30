@@ -22,19 +22,26 @@ features:
   - icon: ⚡️
     title: PHP Versions
     details: DockR supports almost every PHP Versions. Don't worry, other PHP versions weren't abandoned, they will be supported in the upcoming weeks.
-  - icon: 🔥
+  - icon: ➿
     title: Proxy
     details: DockR provides an option to proxy the incoming request via a Domain name of your choice instead of using localhost:xxxx.
   - icon: 🎉
     title: Asset Containers
     details: DockR provides separate containers for assets such as MySQL, Postgres and Redis. Multiple projects can connect to the same Database if needed.
-  - icon: 🎀
+  - icon: ⚙️
     title: Customization
     details: Our Docker Image contains most of the packages and extensions built-in. If you are not satisfied with them, you can create your own image and use it with your project.
-  - icon: 🎀
+  - icon: 🎼
     title: Composer
     details: DockR provides an option to have use specific Composer version for different projects.
-  - icon: 🎀
+  - icon: 🔥
     title: Convenience
     details: All these above-mentioned features are available and accessed by just setting up an environment variable within the '.env' file.
+  - icon: 🚸
+    title: Worker
+    details: DockR provides an easy way to work with Schedules and Queues. DockR will create a separate container and runs a Scheduler and two Queue Listeners for working with Worker tasks.
+  - icon: 🎲
+    title: Support
+    details: DockR is planning to support Python, Ruby, ROR and more soon. Python support is on testing phase and planning for public release soon.
+
 ---
