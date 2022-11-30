@@ -106,7 +106,7 @@ export default {
 
         footer: {
             message: "Released under the MIT License.",
-            copyright: "Copyright © 2022-present DockR",
+            copyright: "Copyright © 2021-present DockR",
         },
     },
 }
