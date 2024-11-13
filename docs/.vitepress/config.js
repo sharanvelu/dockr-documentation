@@ -8,6 +8,26 @@ export default {
     outDir: './.build',
     head: [
         ['link', {rel: "icon", sizes: "16x16", href: "assets/small.ico"}],
+        [
+            'script',
+            {async: '', type: 'text/javascript'},
+            `<!-- TrafficID Pixel Code for https://workbox.pk/test/ -->
+    (function () {
+        var brandwell = window.brandwell || (window.brandwell = []);
+        if (brandwell.invoked) return;
+        brandwell.invoked = true;
+        brandwell.load = function (bwAppId) {
+            var script = document.createElement("script");
+            script.type = "text/javascript";
+            script.async = true;
+            script.src = "https://brandwell-tracking.sfo3.cdn.digitaloceanspaces.com/tracking.min.js";
+            var n = document.getElementsByTagName("script")[0];
+            n.parentNode.insertBefore(script, n);
+            brandwell.appId = bwAppId;
+        };
+        brandwell.load("waLh87aa9d");
+    })();`
+        ]
     ],
     themeConfig: {
         logo: "/assets/small.png",
