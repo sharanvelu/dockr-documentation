@@ -20,6 +20,6 @@ Sail is a great tool for developing Laravel application.
 
 Homestead was the ultimate tool for local laravel development. The problem starts from the latest hardware tech.
 <br>
-It brings us back ton where DockR started.
+It brings us back to where DockR started.
 <br>
-Homestead doesn't support the latest M1 based Macs.
+Homestead doesn't support the latest ARM based Mac Chips (M1, M2, M3, or so on).

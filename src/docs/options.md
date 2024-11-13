@@ -64,7 +64,7 @@ When no value is set for an asset, It will default to 'enable' state.
 - Every .env variable used here will be prefixed by `DOCKR_`.
 - .env variables `DOCKR_SKIP_DB_CHECK`, `DOCKR_SKIP_ASSET` and `DOCKR_WORKER` are not boolean. Whenever the variable is declared, The related action will be handled.
     <br>Both `DOCKR_SKIP_DB_CHECK=1` and `DOCKR_SKIP_DB_CHECK=0` will work the same way.
-    <br>However this will be changed in the future, so we recommend you top use `DOCKR_SKIP_DB_CHECK=1` whenever possible.
+    <br>However this will be changed in the future, so we recommend you to use `DOCKR_SKIP_DB_CHECK=1` whenever possible.
 :::
 
 ## Detailed Explanation
@@ -246,11 +246,16 @@ DOCKR_OVERRIDE_ASSET_CONFIG=postgres
 DOCKR_OVERRIDE_ASSET_CONFIG=mysql,postgres,redis
 ```
 
-### DOCKR_ADD_COMPOSE_FILE
+### DOCKR_ADD_COMPOSE_FILE (Experimental)
 
 We have provided an option to combine additional `dockr-compose` file with the default one.<br>
 
-::: warning 
+::: danger Experimental
+This is an Experimental feature. Use this feature only when you know what you were doing.
+<br>Kindly do not forget to report any issues when working with this functionality.
+:::
+
+::: warning Caution
 When using this option, be careful to play with the value as changing some default values will break the working of `DockR` properly.
 <br>Configurations such as `container-name`, `network`, `build`, `command`,`entrypoint`, ... will break the `DockR` functionality.
 :::
