@@ -23,7 +23,7 @@ If you don't have HomeBrew or don't want to install HomeBrew, you can simply ins
 To install DockR using `curl`, run the following command in your terminal in any directory.
 
 ```bash
-bash -c "$(curl -fsSL https://dockr.in/install)"
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/sharanvelu/dockr/refs/heads/development/install.sh)"
 ```
 
 The above command will install the DockR at your `$HOME` directory and add the executable binary in a directory which is already added to your `environment path` variable.
