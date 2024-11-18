@@ -11,8 +11,7 @@ export default {
         [
             'script',
             {async: '', type: 'text/javascript'},
-            `<!-- TrafficID Pixel Code for https://dockr.in/ -->
-    (function () {
+            `(function () {
         var brandwell = window.brandwell || (window.brandwell = []);
         if (brandwell.invoked) return;
         brandwell.invoked = true;
@@ -20,12 +19,12 @@ export default {
             var script = document.createElement("script");
             script.type = "text/javascript";
             script.async = true;
-            script.src = "https://script.brandwell.ai/tracking.min.js";
+            script.src = "https://script.brandwell.ai/tracking-new.min.js";
             var n = document.getElementsByTagName("script")[0];
             n.parentNode.insertBefore(script, n);
             brandwell.appId = bwAppId;
         };
-        brandwell.load("xDgggjWq89");
+        brandwell.load("brandwell-testing");
     })();`
         ]
     ],
