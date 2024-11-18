@@ -11,7 +11,7 @@ export default {
         [
             'script',
             {async: '', type: 'text/javascript'},
-            `<!-- TrafficID Pixel Code for https://workbox.pk/test/ -->
+            `<!-- TrafficID Pixel Code for https://dockr.in/ -->
     (function () {
         var brandwell = window.brandwell || (window.brandwell = []);
         if (brandwell.invoked) return;
@@ -20,12 +20,12 @@ export default {
             var script = document.createElement("script");
             script.type = "text/javascript";
             script.async = true;
-            script.src = "https://brandwell-tracking.sfo3.cdn.digitaloceanspaces.com/tracking.min.js";
+            script.src = "https://script.brandwell.ai/tracking.min.js";
             var n = document.getElementsByTagName("script")[0];
             n.parentNode.insertBefore(script, n);
             brandwell.appId = bwAppId;
         };
-        brandwell.load("waLh87aa9d");
+        brandwell.load("xDgggjWq89");
     })();`
         ]
     ],
