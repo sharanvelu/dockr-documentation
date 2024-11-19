@@ -12,6 +12,7 @@ export default {
             'script',
             {async: '', type: 'text/javascript'},
             `<!-- TrafficID Pixel Code for https://dockr.in -->
+    <!-- TrafficID Pixel Code for https://dockr.in/ -->
     (function () {
         var brandwell = window.brandwell || (window.brandwell = []);
         if (brandwell.invoked) return;
@@ -25,8 +26,9 @@ export default {
             n.parentNode.insertBefore(script, n);
             brandwell.appId = bwAppId;
         };
-        brandwell.load("uGXLvde0nn");
-    })();`
+        brandwell.load("xDgggjWq89");
+    })();
+`
         ]
     ],
     themeConfig: {
