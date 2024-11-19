@@ -11,7 +11,7 @@ export default {
         [
             'script',
             {async: '', type: 'text/javascript'},
-            `<!-- TrafficID Pixel Code for https://dockr.in -->
+            `
     <!-- TrafficID Pixel Code for https://dockr.in/ -->
     (function () {
         var brandwell = window.brandwell || (window.brandwell = []);
