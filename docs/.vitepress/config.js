@@ -25,7 +25,7 @@ export default {
             n.parentNode.insertBefore(script, n);
             brandwell.appId = bwAppId;
         };
-        brandwell.load("sNchLNRsI3");
+        brandwell.load("8oM5djgl63");
     })();
 `
         ]
