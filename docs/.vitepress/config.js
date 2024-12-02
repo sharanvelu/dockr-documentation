@@ -8,6 +8,10 @@ export default {
     outDir: './.build',
     head: [
         ['link', {rel: "icon", sizes: "16x16", href: "assets/small.ico"}],
+        ['meta', {property: "og:title", content: "DockR"}],
+        ['meta', {property: "og:description", content: "Documentation site for DockR. "}],
+        ['meta', {property: "og:url", content: "https://dockr.in"}],
+        ['meta', {property: "og:type", content: "website"}],
         [
             'script',
             {async: '', type: 'text/javascript'},
