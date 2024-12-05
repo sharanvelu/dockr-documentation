@@ -8,7 +8,6 @@ aside: false
 
 - <a href="https://github.com/sharanvelu/dockr" target="_blank">DockR</a> - DockR CLI Repository
 - <a href="https://github.com/sharanvelu/dockr-documentation" target="_blank">DockR Documentation</a> - Markdown files for DockR Docs Website
-- <a href="https://github.com/sharanvelu/dockr-docs" target="_blank">DockR Docs</a> - Laravel project which converts Markdown to HTML docs website
 - <a href="https://github.com/sharanvelu/dockr-proxy" target="_blank">DockR Proxy | Docker Image</a> - Repository for building Docker Image for Proxy
 - <a href="https://github.com/sharanvelu/dockr-laravel-php" target="_blank">DockR Laravel | Docker Image</a> - Repository for building Docker Images for laravel project containers.
 

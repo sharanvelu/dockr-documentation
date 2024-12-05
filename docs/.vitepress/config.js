@@ -41,6 +41,7 @@ export default {
         nav: [
             {text: "About", link: "/docs/introduction"},
             {text: "Contact", link: "/contact-us"},
+            {text: "Team", link: "/team"},
             {text: "Changelog", link: "/changelog"},
         ],
 
@@ -116,10 +117,11 @@ export default {
                 text: "Others",
                 collapsible: false,
                 items: [
+                    {text: "Contact Us", link: "/contact-us"},
+                    {text: "Team", link: "/team"},
                     {text: "Changelog", link: "/changelog"},
                     {text: "Contribution", link: "/contribution"},
                     {text: "Repository Links", link: "/repository-links"},
-                    {text: "Contact Us", link: "/contact-us"},
                 ],
             },
         ],
