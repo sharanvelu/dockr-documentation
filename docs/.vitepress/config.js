@@ -12,27 +12,6 @@ export default {
         ['meta', {property: "og:description", content: "Documentation site for DockR. "}],
         ['meta', {property: "og:url", content: "https://dockr.in"}],
         ['meta', {property: "og:type", content: "website"}],
-        [
-            'script',
-            {async: '', type: 'text/javascript'},
-            `<!-- TrafficID Pixel Code for https://dockr.in/ -->
-    (function () {
-        var brandwell = window.brandwell || (window.brandwell = []);
-        if (brandwell.invoked) return;
-        brandwell.invoked = true;
-        brandwell.load = function (bwAppId) {
-            var script = document.createElement("script");
-            script.type = "text/javascript";
-            script.async = true;
-            script.src = "https://script.brandwell.ai/tracking.min.js";
-            var n = document.getElementsByTagName("script")[0];
-            n.parentNode.insertBefore(script, n);
-            brandwell.appId = bwAppId;
-        };
-        brandwell.load("U2jOCy2NSx");
-    })();
-`
-        ]
     ],
     themeConfig: {
         logo: "/assets/small.png",
