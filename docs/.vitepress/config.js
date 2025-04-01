@@ -1,7 +1,7 @@
 // .vitepress/config.js
 export default {
     title: 'DockR',
-    description: 'An awesome docs template built by me',
+    description: 'Integration for Laravel - Docker',
     lastUpdated: true,
     cleanUrls: 'with-subfolders',
     srcDir: '../src',

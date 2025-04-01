@@ -1,7 +1,7 @@
 ---
 layout: home
 title: DockR
-description: Landing page for DockR
+description: Integration for Laravel - Docker
 
 hero:
   name: DockR
