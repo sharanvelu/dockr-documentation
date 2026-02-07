@@ -43,6 +43,10 @@ Here are the list of currently supported PHP versions.
 More versions with more features will be supported in the upcoming days.
 :::
 
+::: info Note :
+Versions list might be outdated. Please visit [this link](https://hub.docker.com/r/sharanvelu/laravel-php/tags?ordering=name) for latest images
+:::
+
 ## DB_DATABASE (.env)
 Also, update the `DB_DATABASE=<your_project_DB>`.
 <br>
